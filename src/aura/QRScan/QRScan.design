@@ -1,0 +1,13 @@
+<design:component>
+    <design:attribute 
+      name="UrlType" 
+      default="Full S1 URL" 
+      datasource="Full S1 URL,Id Only,Custom Field" 
+      description="Full URL Example: salesforce1://sObject/a28j0000000APDq/view (the QR code contains that entire link).  If the QR code contains ONLY the id (a28j0000000APDq) then select Id Only."
+                      />
+    <design:attribute name="CustomObject" description="If you select 'Custom Field' for URL Type, enter the name of the object you're matching, like Account or Anything__c"/>
+    <design:attribute name="CustomField" description="If you select 'Custom Field' for URL Type, enter the name of the field you're matching, like Name or Some_Field_I_Made__c"/>
+    <design:attribute name="baseURL" description="If you select 'Custom Field' for URL Type, enter the base URL where the BarCodeSearch page is hosted (your salesforce domain, or a community or site with access to the custom field"/>
+
+    
+</design:component>

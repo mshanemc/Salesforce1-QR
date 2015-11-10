@@ -1,0 +1,18 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" controller="BarCodeSearchCtrl">
+
+	<!-- accepts three parameters: value, field, object	 -->
+
+	<apex:outputPanel rendered="{!searchResult == 'no matches'}">		
+		{!searchResult}
+	</apex:outputPanel>
+
+	<apex:outputPanel rendered="{!searchResult == 'match'}">		
+		{!redirectId}
+		<script type="text/javascript">
+			window.location = "salesforce1://sObject/{!redirectId}/view";
+		</script>
+	</apex:outputPanel>
+	<!-- js redirect -->
+	
+
+</apex:page>

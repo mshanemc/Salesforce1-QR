@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute type="string" default="Full S1 URL" name="UrlType" required="True"/>
+    <aura:attribute type="string" default="Scan" name="messageText" />
+    <aura:attribute type="string" name="CustomObject" />
+    <aura:attribute type="string" name="CustomField" />
+    <aura:attribute type="string" name="baseURL" />
+    
+   	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    {!v.messageText}
+</aura:component>
